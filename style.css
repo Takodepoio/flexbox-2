@@ -9,15 +9,76 @@ body {
 }
 .container{
     background-color: blueviolet;
-    display:felx;
+    display: flex;
+    height: 500px;
+    /*align-items
+    /*align-items:flex-start alinea hasta arriba;*/
+    /*align-items: flex-end alinea hacia anajo;*/
+    /*align-items: center; Esto alinea aal centro*/
+    /*align-items: stretch; Ajusta la altura de los items a la altura disponible en el espacio. Los items no deben tener alto definido*/
+    align-items: center;
+    flex-direction: row-reverse;
+
+
+
+
+
+justify-content: center;
+    /*justify-content: end; alinia los elementos a la derecha*/
+    /*justify-content: start; coloca en default los elemntos y los coloca arriba aa la izquierda*/
+    /*justify-content: center coloca y acomoda los elementos en el centro de la página;*/
+    /* justify-content: space-around; distribuye es espacio de cada item*/
+    /*justify-content: space-between; Este distribuye el espacio disponible entre los elementos*/
+    /*justify-content: space-evenly distribuye el espacio de los elementos y el contenedor;*/
+
 }
 
 .item{
+    border: 1px solid crimson ;
     background-color: cornflowerblue;
     width: 100px;
     height: 100px;
     text-align: center;
     font-size: 24px;
-    font-weight: bold;
-    padding-top: 32px;
+    font-weight:bold;
+    padding-top:32px;
+}
+/* Vamos a usar algo que se llamaa pseudoclases para seleccionar los items individaulmente
+1, Cada item debe tener un tamaña de fuente distinto
+2. Cada uten debe tener un padding top distinto
+3. Cada Item  debe tener un alto distinto. Qye no exceda el alto del contenedor-
+*/
+/*.item:nth-child(4){
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+    font-weight:bold;
+    padding-top:32px;
+}
+.item:nth-child(3){
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+    font-weight:bold;
+    padding-top:32px;
+}
+.item:nth-child(2){
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+    font-weight:bold;
+    padding-top:32px;
+ 
+}
+.item:nth-child(1){
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+    font-weight:bold;
+    padding-top:32px;
+ 
 }
