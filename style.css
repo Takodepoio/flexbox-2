@@ -45,8 +45,8 @@ body {
      /* align-content: stretch; */ /* Estira los items desde su alto sobre el eje transversal "los items no deben tener un alto definido" */
      /* reto */ 
      
-     align-content: space-evenly;
-     justify-content: space-around;
+     align-content: space-between;
+     justify-content: space-between;
     
 
 
@@ -61,7 +61,7 @@ body {
     border: 1px solid crimson ;
     background-color: cornflowerblue;
     width: 100px;
-   /* height: 100px;*/
+    height: 100px;
     text-align: center;
     font-size: 24px;
     font-weight:bold;
