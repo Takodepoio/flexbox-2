@@ -1,5 +1,5 @@
 body {
-    background-color: azure;
+    background-color: rgb(64, 57, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 * {
@@ -10,100 +10,50 @@ body {
 .container{
     background-color: blueviolet;
     display: flex;
-    
-    /*align-items
-    /*align-items:flex-start alinea hasta arriba;*/
-    /*align-items: flex-end alinea hacia anajo;*/
-    /*align-items: center; Esto alinea aal centro*/
-    /*align-items: stretch; Ajusta la altura de los items a la altura disponible en el espacio. Los items no deben tener alto definido*/
+  
+/*
+propiedades de flexbox para los items.
 
-    /*align-items: center;
-    flex-direction: row-reverse;*/
+Flexgrow ajusta el factor de crecimiento para los elementos en funcion del espacion disponible.
+El valor por default es "auto"
 
+Esta propiedad recibe valores numericos. 1,2,3,4,5,6,7,8,9,0 el numero que coloquemos es el factor de crecimeinto
 
-
-
-
-/*justify-content: center;
-    /*justify-content: end; alinia los elementos a la derecha*/
-    /*justify-content: start; coloca en default los elemntos y los coloca arriba aa la izquierda*/
-    /*justify-content: center coloca y acomoda los elementos en el centro de la página;*/
-    /* justify-content: space-around; distribuye es espacio de cada item*/
-    /*justify-content: space-between; Este distribuye el espacio disponible entre los elementos*/
-    /*justify-content: space-evenly distribuye el espacio de los elementos y el contenedor;*/
-    height: 500px;
-    width: 350px;
-    /*flex-wrap: nowrap;*/ /* Estes es el valor por default. Los items se ajustan al ancho que marca el contenedor*/
-    flex-wrap: wrap; /* esto permite tener multiples lineas si los items no caben en el contenedor dara un salto de linea*/
-   /*align-content: normal;*/ /* Valor por default */
-   /*align-content: flex-start;*/ /* lo ajusta desde el inicio del eje transversal */
-     /* align-content: flex-end; */ /* lo ajusta desde el final del eje transversal */
-     /* align-content: center; */ /* ajusta las lineas al centro de el eje transversal */
-     /* align-content: space-around; *//* distribuye el espacio alrededor de las lineas de forma proporcional */
-     /*align-content: space-between; */ /* Distribuye el espacio proporcionalmente entre cada linea sin considerar el contenedor */
-     /* align-content: space-evenly; */ /* Distribuye el espacio proporcionalmente el espacio proporcionalmente entre las lineas y el contenedor */
-     /* align-content: stretch; */ /* Estira los items desde su alto sobre el eje transversal "los items no deben tener un alto definido" */
-     /* reto */ 
-     
-     align-content: space-between;
-     justify-content: space-between;
-    
-
-
-
+*/
 
 
 
 
 }
- /*reto final clase */
+
 .item {
     border: 1px solid crimson ;
     background-color: cornflowerblue;
-    width: 100px;
-    height: 100px;
     text-align: center;
     font-size: 24px;
     font-weight:bold;
-    padding-top:32px;
+   
+}
+/* flex-grow: 1;*/
+  /*  }
+    .punchunguito{
+        flex-grow: 10;
+
     }
-/* Vamos a usar algo que se llamaa pseudoclases para seleccionar los items individaulmente
-1, Cada item debe tener un tamaña de fuente distinto
-2. Cada uten debe tener un padding top distinto
-3. Cada Item  debe tener un alto distinto. Qye no exceda el alto del contenedor-
-*/
-/*.item:nth-child(4){
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    font-size: 24px;
-    font-weight:bold;
-    padding-top:32px;
-}
-.item:nth-child(3){
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    font-size: 24px;
-    font-weight:bold;
-    padding-top:32px;
-}
-.item:nth-child(2){
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    font-size: 24px;
-    font-weight:bold;
-    padding-top:32px;
- 
-}
-.item:nth-child(1){
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    font-size: 24px;
-    font-weight:bold;
-    padding-top:32px;
- 
-}
-*/
+    */
+    .tamarindo {
+        background-color: crimson;
+        flex-grow: 3;
+    }
+    .puchunguito{
+        background-color: greenyellow;
+        flex-grow: 2;
+    }
+    .jamaica{
+        background-color: blueviolet;
+        flex-grow: 4;
+    }
+    .horchata{
+        background-color: aquamarine;
+        flex-grow: 1;
+    }
