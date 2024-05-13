@@ -11,22 +11,12 @@ body {
     background-color: blueviolet;
     display: flex;
   
-/*
-propiedades de flexbox para los items.
-
-Flexgrow ajusta el factor de crecimiento para los elementos en funcion del espacion disponible.
-El valor por default es "auto"
-
-Esta propiedad recibe valores numericos. 1,2,3,4,5,6,7,8,9,0 el numero que coloquemos es el factor de crecimeinto
-
-*/
-
-
-
 
 }
 
 .item {
+    flex-basis: 200px;
+    flex-grow: 1;
     border: 1px solid crimson ;
     background-color: cornflowerblue;
     text-align: center;
@@ -34,26 +24,26 @@ Esta propiedad recibe valores numericos. 1,2,3,4,5,6,7,8,9,0 el numero que coloq
     font-weight:bold;
    
 }
-/* flex-grow: 1;*/
-  /*  }
-    .punchunguito{
-        flex-grow: 10;
+/* flex-shrink -> Esta propiedad funciona como un factor de contracción, encojimiento, reducción de los elementos de un contenedor flex
+flex-shrink: 1; Este es el valor por default de los items. Si no se declara estos es lo que aplica 
 
-    }
-    */
-    .tamarindo {
-        background-color: crimson;
-        flex-grow: 3;
-    }
-    .puchunguito{
-        background-color: greenyellow;
-        flex-grow: 2;
-    }
-    .jamaica{
-        background-color: blueviolet;
-        flex-grow: 4;
-    }
-    .horchata{
-        background-color: aquamarine;
-        flex-grow: 1;
-    }
+flex-shrink recibe valores númericos
+*/
+ .apachurro1{
+    flex-grow: 4;
+    flex-shrink: 1;
+
+
+ }
+ .apachurro2{
+    flex-grow: 3;
+    flex-shrink: 2;
+ }
+ .apachurro3{
+    flex-grow: 2;
+    flex-shrink: 3;
+ }
+ .apachurro4{
+    flex-grow: 1;
+    flex-shrink: 4;
+ }
