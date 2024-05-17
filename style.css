@@ -9,41 +9,36 @@ body {
 }
 .container{
     background-color: blueviolet;
+    width: 500px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 24px;/* unidades absolutas px y unidades relativas rem */
+    gap: 3rem;
+    column-gap: 24px; /* esto mueve la separecion de los elementos en el eje x */
+    row-gap: 32px; /* row-gap es el pespacio entre los elementos en horizontal */
   
 
 }
 
 .item {
-    flex-basis: 200px;
-    flex-grow: 1;
     border: 1px solid crimson ;
     background-color: cornflowerblue;
     text-align: center;
     font-size: 24px;
     font-weight:bold;
+    width: 100px;
+    height: 100px;
+    gap: 4px 32px; /* al poner dos valores en el gap el primer valor es para el eje horizontal y el segundo es para vertical
+     */
+     
    
 }
-/* flex-shrink -> Esta propiedad funciona como un factor de contracción, encojimiento, reducción de los elementos de un contenedor flex
-flex-shrink: 1; Este es el valor por default de los items. Si no se declara estos es lo que aplica 
+/* 
+Gap -> Espacio entre los elementos.
 
-flex-shrink recibe valores númericos
+Escribe valoresen números con unidades relativas o absolutas. 
+
+Esta propiedad se pasa el contenedor.
 */
- .apachurro1{
-    flex-grow: 4;
-    flex-shrink: 1;
 
 
- }
- .apachurro2{
-    flex-grow: 3;
-    flex-shrink: 2;
- }
- .apachurro3{
-    flex-grow: 2;
-    flex-shrink: 3;
- }
- .apachurro4{
-    flex-grow: 1;
-    flex-shrink: 4;
- }
